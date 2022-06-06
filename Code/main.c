@@ -95,7 +95,7 @@ int main() {
         //ask the player to shot as long as he hits something
         do {
             printf("\n");
-            printf("    It's %s 's turn!\n\n\    Enemy Board \n- - - - - - - - - - -\n", p1.name);
+            printf("    It's %s 's turn!\n\n    Enemy Board \n- - - - - - - - - - -\n", p1.name);
             printField(p1.enemyField);
         } while(humanPlay(&p1, &p2));
 
@@ -106,7 +106,7 @@ int main() {
         if (difficultyLevel == 0){
             //ask player 2 to shot as long as he hits something
             do {
-               printf("    It's %s 's turn!\n\n\    Enemy Board \n- - - - - - - - - - -\n", p2.name);
+               printf("    It's %s 's turn!\n\n    Enemy Board \n- - - - - - - - - - -\n", p2.name);
                 printField(p2.enemyField);
             } while(humanPlay(&p2, &p1));
         }else
